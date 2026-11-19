@@ -1,0 +1,95 @@
+ADS305 Big Data Analytics, Week 10
+Lab 8 (Regression), Lab 9 (Classification) and Lab 11 (Cross-Validation)
+
+HOW TO USE THESE FILES
+
+Lab 8 and Lab 11 each arrive as a zip. Unzip each one into a folder of its own, and
+keep everything inside that folder where it is.
+
+The notebooks in those two labs read their data and their images from folders beside
+them, so they only run if those folders come with them and stay where they are. If you
+open a notebook from inside the zip without unzipping it, or take the notebook out on
+its own, the images show as broken and the notebook stops at the first cell that loads
+data, and nothing is wrong with your Python.
+
+Lab 9 is different. It is one notebook with nothing beside it, so it is not zipped and
+it can live anywhere on your machine.
+
+
+WHAT IS IN HERE
+
+  ADS305_Week10_Lab8_Regression.pptx         The briefing slides for Lab 8.
+  ADS305_Week10_Lab9_Classification.pptx     The briefing slides for Lab 9.
+  ADS305_Week10_Lab11_CrossValidation.pptx   The briefing slides for Lab 11.
+
+  Lab 8 Regression.zip
+      lab08.ipynb  This is the one you open.
+      data/        bikeshare.csv and sim_data.csv.
+      images/      featurematrix.png, which the notebook displays.
+
+  Lab 9 Classification/
+      lab09-Classification.ipynb. One notebook, and it needs no data folder.
+
+  Lab 11 Cross-Validation.zip
+      notebook/    s2_exc1_challenge.ipynb, the worked example, and
+                   s2_exc2_challenge.ipynb, the exercise. Open the worked example first.
+      data/        dataset.csv.
+      fig/         Three images, which the two notebooks display.
+
+
+THE ONE THING THAT BREAKS IT
+
+In Lab 8, keep lab08.ipynb beside data and images. The notebook refers to ./data/ and
+./images/, which means "the folder called data, or images, next to me".
+
+In Lab 11, keep notebook, data and fig side by side. The notebooks refer to ../data/
+and ../fig/, which means "go up one level from the notebook folder, then into data, or
+into fig".
+
+Move a notebook somewhere else, or flatten the folders into one, and those paths stop
+resolving.
+
+HOW THE SLIDES POINT AT A CELL
+
+The slides name cells by number, and so does this file. The number counts every cell
+from the top of the notebook, text cells included, starting at 0. It is not the number
+Jupyter prints in square brackets beside a cell, which only records the order things
+were run in. Most slides also show a line or two of the cell's own code with its number
+beside it, so the quickest way to find a cell is to look for that line.
+
+Every slide has a notes page, written to you. The slide is the short version and the
+notes carry the rest, so open the notes pane and read both.
+
+
+WHERE EACH NOTEBOOK STOPS, AND THE ONE PLACE IT DOES NOT
+
+Lab 8, cells 21, 23 and 24 stop with errors. The fix is on slide 6 of the Lab 8
+briefing, THREE CELLS RAISE HERE.
+
+Lab 9, cells 26 and 27 stop unless a package called graphviz is installed. The way round
+is on slide 6 of the Lab 9 briefing, TWO CELLS NEED A PACKAGE.
+
+Lab 9 from cell 69 onwards is not this week's work, so stop at cell 66. Cell 69 needs a
+package, gensim, that may not be installed, and where it is installed cells 96 and 113
+download pretrained models, the first of them well over a gigabyte. That is slide 15 of
+the Lab 9 briefing, WHERE THIS NOTEBOOK STOPS BEING THIS WEEK.
+
+Lab 11, second notebook, cell 3 stops because of a file path. The fix is on slide 12 of
+the Lab 11 briefing, IT WILL NOT RUN AS IT STANDS.
+
+Lab 11, second notebook, cell 8 is the one to watch, because it does not stop. Fill it
+in without a minus sign and the notebook runs to the end with no error and reports
+degree 19 as the best, when the answer is 2. Read slide 14 of the Lab 11 briefing, THE
+SIGN WILL COST YOU THE ANSWER, before you fill that cell in.
+
+
+THE ORDER TO WORK IN
+
+Read the briefing slides and their notes for the lab you are in, then open that lab's
+notebook and work down it. Lab 8 first, then Lab 9, then Lab 11.
+
+
+IF SOMETHING IS MISSING OR WILL NOT OPEN
+
+Bring it to your lab session, with the name of the file and what you tried. Office hours
+are Wednesdays 14:00 to 18:00, SD348.
